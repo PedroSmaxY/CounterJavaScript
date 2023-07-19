@@ -1,4 +1,4 @@
-function confirmar() {
+function confirm() {
   let inicio = Number(window.document.querySelector("input#txtinicio").value);
   let fim = Number(window.document.querySelector("input#txtfim").value);
   let passo = Number(window.document.querySelector("input#txtpasso").value);
