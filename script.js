@@ -1,33 +1,41 @@
-function confirm() {
-  let inicio = Number(window.document.querySelector("input#txtinicio").value);
-  let fim = Number(window.document.querySelector("input#txtfim").value);
-  let passo = Number(window.document.querySelector("input#txtpasso").value);
+function confirmCount() {
+  let start = Number(window.document.querySelector("input#txtstart").value);
+  let end = Number(window.document.querySelector("input#txtend").value);
+  let step = Number(window.document.querySelector("input#txtpass").value);
   let res = window.document.querySelector("div#res");
-  let resultado = "";
-  if (inicio <= 0 || fim <= 0) {
-    res.innerHTML = "Impossível contar!";
-  } else if (passo <= 0) {
-    window.alert("Passo inválido! Considerando PASSO 1");
-    passo = 1;
+  let result = "";
+
+  if (isNaN(start) || isNaN(end) || isNaN(step)) {
+    res.innerHTML = "Invalid input! Please enter numeric values.";
+    return;
   }
-  if (inicio < fim) {
-    // contagem crescente
-    for (let i = inicio; i <= fim; i += passo) {
-      resultado += `${i} `;
-      for (let j = 1; j <= passo; j++) {
-        resultado += "👉";
+
+  if (start <= 0 || end <= 0) {
+    res.innerHTML = "Cannot count! Please enter positive values.";
+    return;
+  } else if (step <= 0) {
+    window.alert("Invalid step! Considering STEP 1");
+    step = 1;
+  }
+
+  if (start < end) {
+    // Counting up
+    for (let i = start; i <= end; i += step) {
+      result += `${i} `;
+      for (let j = 1; j <= step; j++) {
+        result += "👉";
       }
     }
   } else {
-    // contagem regressiva
-    for (let c = inicio; c >= fim; c -= passo) {
-      resultado += `${c} `;
-      for (let j = 1; j <= passo; j++) {
-        resultado += "👉";
+    // Counting down
+    for (let c = start; c >= end; c -= step) {
+      result += `${c} `;
+      for (let j = 1; j <= step; j++) {
+        result += "👉";
       }
     }
   }
 
-  resultado = resultado.slice(0, -2) + "🏁";
-  res.innerHTML = resultado;
+  result = result.slice(0, -2) + "🏁";
+  res.innerHTML = result;
 }
