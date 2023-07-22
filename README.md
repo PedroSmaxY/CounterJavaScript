@@ -1,8 +1,11 @@
-# ContadorJavaScript
+# CounterJavaScript
 Initial menu:
 
-![image](https://github.com/PedroSmaxY/ContadorJavaScript/assets/127573080/7afca67b-1aad-4268-9a47-fd0016b836f2)
+![image](https://github.com/PedroSmaxY/CounterJavaScript/assets/127573080/fec9f016-7128-42e6-9a2f-6a668b27461d)
+
 
 result:
 
-![image](https://github.com/PedroSmaxY/ContadorJavaScript/assets/127573080/81378980-7c6b-4313-abbe-5909e0715e5c)
+![image](https://github.com/PedroSmaxY/CounterJavaScript/assets/127573080/2af41af0-ebdb-43be-8821-6986e53f2497)
+
+
