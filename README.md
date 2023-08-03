@@ -1,6 +1,6 @@
 # CounterJavaScript
 
-You can check this web application clicking <a href="https://pedrosmaxy.github.io/CounterJavaScript/">HERE.</a>.
+You can check this web application clicking <a href="https://pedrosmaxy.github.io/CounterJavaScript/">HERE.</a>
 
 Initial menu:
 
